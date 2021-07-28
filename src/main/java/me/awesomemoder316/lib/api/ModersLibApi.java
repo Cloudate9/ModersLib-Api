@@ -42,7 +42,7 @@ public class ModersLibApi {
     public void spigotUpdateCheck(int resourceId, Plugin requesterPlugin, URL downloadURL) {}
 
     /**
-     * updateDetected contains the book with update info for a plugin with updates.
+     * updateDetected contains the books with update info for plugins with updates.
      *
      * @author awesomemoder316
      * @since June 30th, 2021
@@ -58,11 +58,9 @@ public class ModersLibApi {
      * @author awesomemoder316
      * @since June 30th, 2021
      *
-     * @return HashMap updateDetected.
+     * @return HashMap pastFirstCheck.
      *
      */
     public ArrayList<Plugin> getpastFirstCheck() {return new ArrayList<>();}
 
-
 }
-
