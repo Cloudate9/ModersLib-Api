@@ -13,8 +13,9 @@ public class ModersLibApi {
     //The actual code for the methods are in ModersLib
 
     /**
-     * Detailed update check, including changelog. Uses Github tags.
-     * This only works properly if the tag version is the same as the corresponding version's plugin.yml,
+     * Github update check, using Github tags.
+     * This only works properly if the tag version is the same as the corresponding version's plugin.yml.
+     * Users will not asked to update if the tag version contains "alpha" or "beta".
      *
      * @author awesomemoder316
      * @since June 30th, 2021
@@ -24,7 +25,7 @@ public class ModersLibApi {
      * @param downloadURL       The url where the updated plugin can be fetched.
      * @param requesterPlugin   The plugin that calls this method.
      */
-    public void detailedUpdateCheck(String githubUsername, String githubProjectName, URL downloadURL, Plugin requesterPlugin) {}
+    public void githubUpdateCheck(String githubUsername, String githubProjectName, URL downloadURL, Plugin requesterPlugin) {}
 
     /**
      *
@@ -38,7 +39,7 @@ public class ModersLibApi {
      * @param downloadURL           The url where the updated plugin can be fetched.
      */
 
-    public void basicSpigotCheck(int resourceId, Plugin requesterPlugin, URL downloadURL) {}
+    public void spigotUpdateCheck(int resourceId, Plugin requesterPlugin, URL downloadURL) {}
 
     /**
      * updateDetected contains the book with update info for a plugin with updates.
