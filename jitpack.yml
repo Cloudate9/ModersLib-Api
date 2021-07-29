@@ -1,0 +1,4 @@
+# Made so that JitPack can build with Java 11
+
+jdk:
+  - openjdk11
