@@ -4,7 +4,7 @@ plugins {
     `maven-publish`
 }
 
-group = "me.awesomemoder316.moderslibapi"
+group = "io.github.awesomemoder316.moderslibapi"
 version = "1.17.1-2"
 
 repositories {
