@@ -1,4 +1,4 @@
-package me.awesomemoder316.lib.api;
+package io.github.awesomemoder316.lib.api;
 
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
@@ -13,7 +13,7 @@ public class ModersLibApi {
     //The actual code for the methods are in ModersLib
 
     /**
-     * Github update check, using Github tags.
+     * Github update check, using Github releases. Does not work with only Github tags.
      * This only works properly if the tag version is the same as the corresponding version's plugin.yml.
      * Users will not asked to update if the tag version contains "alpha" or "beta".
      *

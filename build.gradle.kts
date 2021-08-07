@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "me.awesomemoder316.moderslibapi"
-version = "1.17.1-1"
+version = "1.17.1-2"
 
 repositories {
     mavenCentral()
