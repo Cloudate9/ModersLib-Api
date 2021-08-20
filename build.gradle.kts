@@ -40,6 +40,11 @@ tasks.compileJava {
     targetCompatibility = "11"
 }
 
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
 artifacts.archives(tasks.shadowJar)
 
 tasks.shadowJar {
@@ -55,6 +60,32 @@ publishing {
             version = rootProject.version.toString()
 
             from(components["java"])
+
+            pom {
+                name.set("${rootProject.group}:${rootProject.name}")
+                description.set("The api for the Spigot library ModersLib!")
+                url.set("https://github.com/awesomemoder316/ModersLib-Api")
+
+                licenses {
+                    license {
+                        name.set("GNU Lesser General Public License v3.0")
+                        url.set("https://www.gnu.org/licenses/lgpl-3.0.en.html")
+                    }
+                }
+
+                developers {
+                    developer {
+                        name.set("Awesomemoder316")
+                        url.set("https://github.com/awesomemoder316/ModersLib-Api")
+                    }
+                }
+
+                scm {
+                    connection.set("scm:git:https://github.com/awesomemoder316/ModersLib-Api.git")
+                    url.set("https://github.com/awesomemoder316/ModersLib-Api/tree/master")
+                }
+
+            }
         }
     }
 }
