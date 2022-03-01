@@ -32,7 +32,7 @@ dependencies {
     implementation("net.kyori:adventure-platform-bukkit:4.0.0-SNAPSHOT")
     implementation("net.wesjd:anvilgui:1.5.3-SNAPSHOT")
     implementation("org.bstats:bstats-bukkit:2.2.1")
-    implementation("org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT")
+    implementation("org.spigotmc:spigot-api:1.18.2-R0.1-SNAPSHOT")
 }
 
 tasks.compileJava {
